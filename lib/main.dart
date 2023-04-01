@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:petcare_app/PetSitter.dart';
+import 'package:petcare_app/sitterCard.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+   MyApp({super.key});
 
+  final PetSitter petSitter = PetSitter(1, "fullname_Sitter", "email_Sitter", "gender_Sitter",123456, "adress_Sitter", "password_Sitter", "photo_Sitter", "about_me_Sitter", 15, 2);
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -24,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: SitterCard(petSitter: petSitter),
     );
   }
 }
