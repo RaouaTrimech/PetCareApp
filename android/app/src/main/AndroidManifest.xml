@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tn.petcare.petcare_app">
    <application
-        android:label="petcare_app"
+        android:label="PetCare"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
